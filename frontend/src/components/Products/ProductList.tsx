@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { api } from '../../../services/api';
+import { api } from '../../services/api';
 import { Product } from '../../types';
 import { ProductItem } from './ProductItem';
 
@@ -37,12 +37,13 @@ export function ProductList() {
   return (
     <div className="mb-8">
       <div className="flex justify-between items-center mb-4">
-        <div>
+        <div className="flex items-center gap-2">
+          <span className="text-xl">🏷️</span>
           <h2 className="text-xl font-bold text-gray-900">Produtos</h2>
         </div>
         <button
           onClick={() => setShowForm(!showForm)}
-          className="px-4 py-2 bg-gray-900 text-white text-sm rounded-md hover:bg-gray-800"
+          className="px-4 py-2 bg-gray-900 text-white text-sm rounded-md hover:bg-gray-800 transition-colors"
         >
           + Novo
         </button>
@@ -79,7 +80,7 @@ export function ProductList() {
           </div>
           <button
             type="submit"
-            className="mt-3 px-4 py-2 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700"
+            className="mt-3 px-4 py-2 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 transition-colors"
           >
             Salvar Produto
           </button>

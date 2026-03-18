@@ -1,7 +1,7 @@
 import { ProductCost } from '../../domain/entities/ProductCost';
 import { ProductCostRepository } from '../../domain/repositories/ProductCostRepository';
 import { ProductRepository } from '../../domain/repositories/ProductRepository';
-import { UpdateCostDTO } from '../../src/dtos/dtos';
+import { UpdateCostDTO } from '../dtos';
 import { AppError } from '../../shared/errors/AppError';
 
 export class UpdateProductCostUseCase {

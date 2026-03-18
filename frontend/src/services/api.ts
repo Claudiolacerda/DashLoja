@@ -1,5 +1,4 @@
-import { Product, ProductCost, Order, Dashboard, ApiResponse } from '../src/types';
-
+import { Product, ProductCost, Order, Dashboard, ApiResponse } from '../types';
 const API_URL = 'http://localhost:3001/api';
 
 export const api = {

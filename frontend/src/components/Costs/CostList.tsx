@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { api } from '../../../services/api';
-import { ProductCost, Product } from '../../types';
+import { api } from '../../services/api';
+import { ProductCost, Product } from '../../../types';
 import { CostEditor } from './CostEditor';
 
 export function CostList() {
@@ -39,10 +39,13 @@ export function CostList() {
 
   return (
     <div className="mb-8">
-      <h2 className="text-xl font-bold text-gray-900 mb-1">Custos de Produto</h2>
+      <div className="flex items-center gap-2 mb-1">
+        <span className="text-xl">💲</span>
+        <h2 className="text-xl font-bold text-gray-900">Custos de Produto</h2>
+      </div>
       <p className="text-sm text-gray-500 mb-4">Gerencie os custos dos seus produtos</p>
 
-      <div className="overflow-x-auto bg-white rounded-lg border">
+      <div className="overflow-x-auto bg-white rounded-lg border shadow-sm">
         <table className="w-full">
           <thead className="bg-gray-50">
             <tr>

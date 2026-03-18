@@ -1,4 +1,4 @@
-import { Order } from '../../types';
+import { Order } from '../../services/api';
 
 interface OrderItemProps {
   order: Order;
@@ -17,11 +17,22 @@ export function OrderItem({ order }: OrderItemProps) {
   };
 
   return (
-    <tr className="border-b hover:bg-gray-50">
-      <td className="px-4 py-3 text-sm">{order.id}</td>
-      <td className="px-4 py-3 text-sm">{order.buyerName}</td>
-      <td className="px-4 py-3 text-sm">{formatDate(order.createdAt)}</td>
-      <td className="px-4 py-3 text-sm font-medium">{formatCurrency(order.totalAmount)}</td>
+    <tr className="hover:bg-slate-700/30 transition-colors">
+      <td className="px-6 py-4">
+        <span className="text-sm font-medium text-blue-400">{order.id}</span>
+      </td>
+      <td className="px-6 py-4">
+        <div>
+          <p className="text-sm font-medium text-white">{order.buyerName}</p>
+          <p className="text-xs text-slate-400">{order.buyerEmail}</p>
+        </div>
+      </td>
+      <td className="px-6 py-4">
+        <span className="text-sm text-slate-300">{formatDate(order.createdAt)}</span>
+      </td>
+      <td className="px-6 py-4">
+        <span className="text-sm font-semibold text-green-400">{formatCurrency(order.totalAmount)}</span>
+      </td>
     </tr>
   );
 }

@@ -1,6 +1,6 @@
 import { OrderRepository } from '../../domain/repositories/OrderRepository';
 import { ProductCostRepository } from '../../domain/repositories/ProductCostRepository';
-import { DashboardDTO, DashboardFilterDTO } from '../../src/dtos/dtos';
+import { DashboardDTO, DashboardFilterDTO } from '../dtos';
 
 export class GetDashboardUseCase {
   constructor(

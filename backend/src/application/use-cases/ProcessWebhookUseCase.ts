@@ -1,6 +1,6 @@
 import { Order } from '../../domain/entities/Order';
 import { OrderRepository } from '../../domain/repositories/OrderRepository';
-import { WebhookDTO } from '../../src/dtos/dtos';
+import { WebhookDTO } from '../dtos';
 import { AppError } from '../../shared/errors/AppError';
 
 export class ProcessWebhookUseCase {

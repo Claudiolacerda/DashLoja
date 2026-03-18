@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { api } from '../../../services/api';
+import { api } from '../../services/api';
 import { Order } from '../../types';
 import { OrderItem } from './OrderItem';
 
@@ -23,10 +23,13 @@ export function OrderList() {
 
   return (
     <div className="mb-8">
-      <h2 className="text-xl font-bold text-gray-900 mb-1">Pedidos Recentes</h2>
+      <div className="flex items-center gap-2 mb-1">
+        <span className="text-xl">🛒</span>
+        <h2 className="text-xl font-bold text-gray-900">Pedidos Recentes</h2>
+      </div>
       <p className="text-sm text-gray-500 mb-4">Últimos pedidos recebidos via webhook</p>
 
-      <div className="overflow-x-auto bg-white rounded-lg border">
+      <div className="overflow-x-auto bg-white rounded-lg border shadow-sm">
         <table className="w-full">
           <thead className="bg-gray-50">
             <tr>
