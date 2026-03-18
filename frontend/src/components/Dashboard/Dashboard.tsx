@@ -37,7 +37,7 @@ export function Dashboard() {
 
   return (
     <div className="mb-12">
-      {/* HEADER */}
+      
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/30">
@@ -60,9 +60,9 @@ export function Dashboard() {
 
       {dashboard && (
         <>
-          {/* CARDS MÉTRICAS */}
+       
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            {/* LUCRO */}
+           
             <div className="bg-gradient-to-br from-green-900/40 to-emerald-900/40 backdrop-blur-sm border-2 border-green-500/30 rounded-2xl p-6 hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-300 hover:scale-105">
               <div className="flex items-center justify-between mb-3">
                 <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center shadow-lg shadow-green-500/50">
@@ -92,7 +92,7 @@ export function Dashboard() {
               </p>
             </div>
 
-            {/* CUSTO */}
+         
             <div className="bg-gradient-to-br from-red-900/40 to-rose-900/40 backdrop-blur-sm border-2 border-red-500/30 rounded-2xl p-6 hover:shadow-2xl hover:shadow-red-500/20 transition-all duration-300 hover:scale-105">
               <div className="flex items-center justify-between mb-3">
                 <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center shadow-lg shadow-red-500/50">
